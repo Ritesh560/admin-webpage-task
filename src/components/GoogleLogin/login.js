@@ -4,12 +4,12 @@ import GoogleLogin from "react-google-login"
 //importing css
 import "./login.css"
 
-function Login() {
+function Login({ setLoggedIn }) {
   const handelLogin = (e) => {
     localStorage.setItem("googleId", e.profileObj.googleId)
     localStorage.setItem("userName", e.profileObj.name)
     localStorage.setItem("email", e.profileObj.email)
-    console.log(e.profileObj)
+    setLoggedIn(e.profileObj.googleId)
   }
 
   return (
