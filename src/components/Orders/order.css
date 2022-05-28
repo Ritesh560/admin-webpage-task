@@ -1,10 +1,18 @@
 .profile {
   margin: 20px;
   font-weight: bold;
+  width: 300px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  padding: 10px;
+}
+.profile h2 {
+  text-align: center;
 }
 
 .orders {
   margin: 20px;
+  position: relative;
 }
 
 .order {
@@ -15,12 +23,17 @@
   position: relative;
 }
 
+.editOrder {
+  cursor: pointer;
+}
+
 .btn {
   background-color: blue;
   color: white;
   padding: 5px 20px;
   margin-left: 50px;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .delete-order {
@@ -28,9 +41,35 @@
   position: absolute;
   top: 10px;
   right: 20px;
+  cursor: pointer;
 }
 
 .order p {
   padding: 5px;
   margin: 0%;
+}
+
+.addOrder {
+  border: 2px solid black;
+  padding: 20px;
+  width: 300px;
+  position: relative;
+}
+
+@media screen and (min-width: 750px) {
+  .addOrder {
+    position: fixed;
+    top: 250px;
+    right: 20px;
+  }
+}
+
+.order-Data p {
+  margin: 0%;
+  padding: 5px 0px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.order-Data input {
+  margin-bottom: 20px;
 }
